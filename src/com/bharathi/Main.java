@@ -25,11 +25,11 @@ public class Main {
         System.out.println("*********************");
 
         Map<Employee,Integer> employees = new HashMap<>();
-        employees.put(new Employee(1,"Bharathi","IT"),2);
-        employees.put(new Employee(10,"Saketh","Digital Marketing"),1);
-        employees.put(new Employee(22,"Bala","Infra"),3);
-        employees.put(new Employee(6,"Saketh","IT"),6);
-        employees.put(new Employee(190,"Prasad","IT"),9);
+        employees.put(new Employee(1,"Bharathi","IT", "9900887700", 40000d),2);
+        employees.put(new Employee(10,"Saketh","Digital Marketing", "9900887700", 40000d),1);
+        employees.put(new Employee(22,"Bala","Infra", "9900887700", 40000d),3);
+        employees.put(new Employee(6,"Saketh","IT", "9900887700", 40000d),6);
+        employees.put(new Employee(190,"Prasad","IT", "9900887700", 40000d),9);
 
 
         employees.entrySet().stream().sorted(Map.Entry.comparingByKey(Comparator.comparing(Employee::getId))).forEach(System.out::println);

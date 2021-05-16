@@ -1,15 +1,19 @@
 package com.bharathi;
 
 public class Employee {
-    public Employee(Integer id, String name, String department) {
+    public Employee(Integer id, String name, String department, String mobileNumbers, Double salary) {
         this.id = id;
         this.name = name;
         this.department = department;
+        this.mobileNumbers = mobileNumbers;
+        this.Salary = salary;
     }
 
     private Integer id;
     private String name;
     private String department;
+    private String mobileNumbers;
+    private Double Salary;
 
     public Integer getId() {
         return id;
@@ -42,5 +46,21 @@ public class Employee {
                 ", name='" + name + '\'' +
                 ", department='" + department + '\'' +
                 '}';
+    }
+
+    public String getMobileNumbers() {
+        return mobileNumbers;
+    }
+
+    public void setMobileNumbers(String mobileNumbers) {
+        this.mobileNumbers = mobileNumbers;
+    }
+
+    public Double getSalary() {
+        return Salary;
+    }
+
+    public void setSalary(Double salary) {
+        Salary = salary;
     }
 }
